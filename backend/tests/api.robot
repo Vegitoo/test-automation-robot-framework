@@ -42,7 +42,6 @@ Verify Add Article Without Title
     ${data}=    Create Dictionary    content=Test Content
     ${response}=    POST    ${API_URL}    json=${data}    headers=${headers}    expected_status=400 
 
-*** Test Cases ***
 Verify Get Request
     ${response}=  GET  http://proxy/health  expected_status=200
 
